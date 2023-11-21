@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.ms-simple1-main {
+	border-left-style: none;
+	border-right-style: none;
+	border-top: 1.5pt solid green;
+	border-bottom: 1.5pt solid green;
+}
+.ms-simple1-tl {
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+	border-bottom: .75pt solid green;
+}
+.ms-simple1-top {
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+	border-bottom: .75pt solid green;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+.auto-style2 {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom: 1px solid green;
+}
+.auto-style3 {
+	border-left-style: none;
+	border-left-width: 0px;
+	border-right-style: none;
+	border-top: 0px solid green;
+	border-bottom: 0px solid green;
+}
+.auto-style4 {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: none;
+	border-top-style: none;
+	border-bottom: .75pt solid green;
+}
+.auto-style5 {
+	margin-left: 26px;
+}
+.auto-style6 {
+	font-size: x-large;
+}
+</style>
+</head>
+<body style="background-color: #CCFFFF">
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <q>Travel makes one modest. You see what a tiny place you occupy in the world.</q>
+  <p class="author">- Gustave Flaubert</p>
+</div>
+
+<div class="mySlides">
+  <q>Every dreamer knows that it is entirely possible to be homesick for a place you've never been to, perhaps more homesick than for familiar ground.</q>
+  <p class="author">- Judith Thurman</p>
+</div>
+
+<div class="mySlides">
+  <q>Traveling – it leaves you speechless, then turns you into a storyteller.</q>
+  <p class="author">- Ibn Battuta</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+	<h3><span class="auto-style35" lang="en-in">TARKALI UNVEILD </span></h3>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<p>&nbsp;</p>
+<table align="center" class="auto-style6">
+	<tr>
+		<td class="auto-style6" style="width: 62px">
+		<a href="about%20tarkali.html"><span class="auto-style43">HOME</span></a></td>
+		<td class="auto-style10" style="width: 347px"><strong><em>
+		<span class="auto-style28">&nbsp;&nbsp; <span class="auto-style13">&nbsp;</span></span></em></strong><span class="auto-style28"><a href="third_page.html"><span class="auto-style43">CULTURAL 
+		ATRACTIONS</span></a></span></td>
+		<td class="auto-style11" style="width: 117px">&nbsp;<a href="third_page.html"><span class="auto-style43">ADVENTURE</span></a></td>
+		<td class="auto-style11" style="width: 96px"><span class="auto-style13">
+		&nbsp;</span><a href="4TH%20PAGE.html"><span class="auto-style43">FOOD</span></a>
+		</td>
+		<td class="auto-style11" style="width: 160px">
+		<span class="auto-style43"><a href="ABOUT%20US.Html">CONTACT US</a></span></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p>
+<img alt="Best Cafes and Water Activities at Anjuna Beach, Goa - Tripoto" class="auto-style5" height="359" src="1618139934_untitled.png" width="683"><img alt="11 Best Water Sports in Bali to Try For All Adventure and Thrill Seekers" src="https://pyt-blogs.imgix.net/2020/05/Water-Sports-Bali.jpg?auto=format&amp;ixlib=php-3.3.0"></p>
+<table class="auto-style3" style="width: 100%">
+	<!-- fpstyle: 1,011111100 -->
+	<tr>
+		<td class="auto-style2">
+		<table style="width: 100%">
+			<tr>
+				<td>
+				<table style="width: 100%">
+					<tr>
+						<td style="height: 22px">&nbsp;</td>
+						<td style="height: 22px"></td>
+					</tr>
+					<tr>
+						<td>Tarkarli, with its stunning beaches and scenic 
+						surroundings, offers a variety of fun activities for 
+						tourists. Here are some enjoyable things to do in 
+						Tarkarli:<br><br>1. <strong>Beach Activities:</strong>Tarkarli 
+						Beach and nearby beaches like Devbag Beach and Malvan 
+						Beach are perfect for sunbathing, beachcombing, and 
+						enjoying the sunset. You can also indulge in beach 
+						sports like volleyball and frisbee.<br><br>2. <strong>
+						Water Sports:</strong> Tarkarli is famous for its water 
+						sports activities. You can enjoy activities such as 
+						snorkeling, scuba diving, parasailing, jet-skiing, 
+						banana boat rides, and bumper rides. There are several 
+						water sports operators along the beach offering these 
+						experiences.<br><br>3. <strong>Boat Rides:</strong> Take 
+						a boat ride in the backwaters of Tarkarli. You can opt 
+						for a leisurely boat ride or a thrilling speedboat ride, 
+						exploring the tranquil waters and mangrove forests.<br>
+						<br>4. <strong>Dolphin Safari:</strong> Tarkarli is 
+						known for its dolphin sightings. You can go on a dolphin 
+						safari early in the morning to spot these playful 
+						creatures in their natural habitat.<br><br>5. <strong>
+						Sindhudurg Fort Visit: </strong>Take a boat trip to 
+						Sindhudurg Fort, a historical marvel built by 
+						Chhatrapati Shivaji Maharaj. Explore the fort and learn 
+						about its history.<br><br>6. <strong>Visit Tsunami 
+						Island:</strong> Tsunami Island is a small, secluded 
+						island near Tarkarli. It's a great spot for water sports 
+						and relaxation. You can reach the island by boat.<br>
+						<br>7. <strong>Cultural Experiences:</strong>Engage in 
+						cultural experiences by visiting local fishing villages, 
+						interacting with the locals, and exploring the 
+						traditional way of life in coastal Maharashtra.<br><br>
+						8. <strong>Relaxation and Spa:</strong> Many resorts and 
+						accommodations in Tarkarli offer spa and wellness 
+						services. After a day of activities, indulge in a 
+						relaxing massage or spa treatment.<br><br>9. <strong>
+						Explore Cuisine:</strong> Enjoy the local Malvani 
+						cuisine, which is known for its spicy and flavorful 
+						seafood dishes. Visit local restaurants and try 
+						authentic Malvani delicacies.<br><br>10. <strong>Bird 
+						Watching:</strong> Tarkarli and its surrounding areas 
+						are home to various bird species. Birdwatchers can enjoy 
+						observing different birds in their natural habitat.<br>
+						<br>Remember that the availability of certain activities 
+						might depend on the season and weather conditions, so 
+						it's a good idea to check with local tour operators or 
+						your accommodation for the best options during your 
+						visit.</td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+		<td class="auto-style4">&nbsp;</td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+
+</body>
+</html> 
